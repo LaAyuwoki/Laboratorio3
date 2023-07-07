@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Personajes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/ppglogo.png" alt="PowerPuff Girls Logo">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id= "cat_ppg_girls" class="categoria_personajes">
+                <h3 id="prueba" >Chicas Superpoderosas</h3>
+                <div class="contenedor_masivo">
+                    <div id="bombon" class="contenedor_personaje">
+                        <a href="#">
+                            <img src="images/blossom.png" alt="Bombón">
+                            <h4>Bombón</h4>
+                        </a>
+                    </div>
+                    <div id="burbuja" class="contenedor_personaje">
+                        <a href="#">
+                            <img src="images/bubbles.jpg" alt="Burbuja">
+                            <h4>Burbuja</h4>
+                        </a>
+                    </div>
+                    <div id="bellota" class="contenedor_personaje">
+                        <a href="#">
+                            <img src="images/buttercup.png" alt="Bellota">
+                            <h4>Bellota</h4>
+                        </a>
+                    </div>
+                </div>
+        </article>
+
+        <article id= "cat_ciudadanos" class="categoria_personajes">
+                <h3 id="prueba">Ciudadanos</h3>
+                <div class="contenedor_masivo">
+                    <div id="utonio" class="contenedor_personaje" onclick="showHideInfoPersonaje('utonio','ciudadanos')">
+                            <img src="images/utonium.png" alt="Profesor Utonio">
+                            <h4>Profesor Utonio</h4>
+                    </div>
+                    <div id="alcalde" class="contenedor_personaje" onclick="showHideInfoPersonaje('alcalde','ciudadanos')">
+                            <img src="images/alcalde.jpg" alt="Alcalde">
+                            <h4>Alcalde</h4>
+                    </div>
+                    <div id="belo" class="contenedor_personaje" onclick="showHideInfoPersonaje('belo','ciudadanos')">
+                            <img src="images/señorita_belo.jpg" alt="Señorita Belo">
+                            <h4>Señorita Belo</h4>
+                    </div>
+                    <div id="keane" class="contenedor_personaje" onclick="showHideInfoPersonaje('keane','ciudadanos')">
+                            <img src="images/señorita_keane.png" alt="Señorita Keane">
+                            <h4>Señorita Keane</h4>
+                    </div>
+                </div>
+                <div class="info_personaje" id="info_utonio" style="display:none">
+                    <h4>Profesor Utonio</h4>
+                    <p>El creador de las Chicas Superpoderosas. Es muy sobreprotector de las chicas, afectuoso y paternal, suele levantarles el ánimo cuando éstas se encuentran tristes. Si bien se lo ve asustadizo puede ser estricto con las niñas cuando se necesita.
+                    <br>Sus mejores inventos suelen ser aquellos que crea por accidente. El resto suelen no funcionar o tienen un gran defecto.
+                    <br>No suele tener suerte en el amor. Sus relaciones con la Señorita Keane, la Señorita Bello y Sedusa no prosperaron.</p>
+                </div>
+                <div class="info_personaje" id="info_alcalde" style="display:none">
+                    <p>Es el encargado de llamar a las Chicas Superpoderosas cuando hay peligro azotando la ciudad, aunque también las llama para cosas triviales como abrir su frasco de pepinillos (por los cuales tiene una obsesión).
+                    <br>Es muy torpe y constantemente necesita ayuda de su secretaria, la Señorita Bello.
+                    <br>Si bien está casado (con una mujer que luce igual a él) no parece querer mucho a su esposa, más bien pareciera tener mayores sentimientos por su atractiva secretaria.
+                    <br>Si llega a perder su sombrero puede volverse tan fuerte como las Chicas Superpoderosas.</p>
+                </div>
+                <div class="info_personaje" id="info_belo" style="display:none">
+                    <p>Es la secretaria del Alcalde y Diputada de Saltadilla. Es tan hermosa como inteligente, siempre está atendiendo los asuntos de la alcaldía.
+                    <br>Su rostro no suele mostrarse, ya sea porque objetos tapan su cara o la cámara corta todo por encima de su cuello.
+                    <br>No parece estar en una relación amorosa, aunque se ha llegado a insinuar que está enamorada de su jefe.</p>
+                </div>
+                <div class="info_personaje" id="info_keane" style="display:none">
+                    <p>Es la maestra de las Chicas Superpoderosas. Se la muestra como una persona paciente, comprensiva, maternal y protectora de sus alumnos.
+                    <br>Prohíbe completamente la violencia en la escuela, no importa si enemigos están atacando o una crisis se está desatando, siempre intentará encontrar una solución pacífica.
+                    <br>Demostró tener conocimiento sobre la física relativa, desarrollando complejas ecuaciones a gran velocidad.</p>
+                </div>
+        </article>
+
+        <article id= "cat_villanos" class="categoria_personajes">
+                <h3>Villanos</h3>
+                <div class="contenedor_masivo">
+                    <div id="mojojojo" class="contenedor_personaje" onclick="showHideInfoPersonaje('mojojojo','villanos')">
+                            <img src="images/mojojojo.png" alt="Mojo Jojo">
+                            <h4>Mojo Jojo</h4>
+                    </div>
+                    <div id="el" class="contenedor_personaje" onclick="showHideInfoPersonaje('el','villanos')">
+                            <img src="images/him.jfif" alt="Él">
+                            <h4>Él</h4>
+                    </div>
+                    <div id="peludito" class="contenedor_personaje" onclick="showHideInfoPersonaje('peludito','villanos')">
+                            <img src="images/fuzzy.gif" alt="Peludito">
+                            <h4>Peludito</h4>
+                    </div>
+                    <div id="princesa" class="contenedor_personaje" onclick="showHideInfoPersonaje('princesa','villanos')">
+                            <img src="images/princesa.png" alt="Princesa Morbucks">
+                            <h4>Princesa Morbucks</h4>
+                    </div>
+                </div>
+                <div class="contenedor_masivo">
+                    <div id="rrb" class="contenedor_personaje" onclick="showHideInfoPersonaje('rrb','villanos')">
+                            <img src="images/rrb.png" alt="Chicos Superolorosos">
+                            <h4>Chicos Superolorosos</h4>
+                    </div>
+                    <div id="gangreen" class="contenedor_personaje" onclick="showHideInfoPersonaje('gangreen','villanos')">
+                            <img src="images/gangreen_band.jpg" alt="Banda Gangrena">
+                            <h4>Banda Gangrena</h4>
+                    </div>
+                    <div id="amoeba" class="contenedor_personaje" onclick="showHideInfoPersonaje('amoeba','villanos')">
+                            <img src="images/amoeba_boys.jpg" alt="Banda Ameba">
+                            <h4>Banda Ameba</h4>
+                    </div>
+                    <div id="sedusa" class="contenedor_personaje" onclick="showHideInfoPersonaje('sedusa','villanos')">
+                            <img src="images/sedusa.jpg" alt="Sedusa">
+                            <h4>Sedusa</h4>
+                    </div>
+                </div>
+                <div class="info_personaje" id="info_mojojojo" style="display:none">
+                    <p>Es el villano principal de la serie y quien más veces ha logrado derrotar a las Chicas Superpoderosas.
+                    <br>Se trata de un científico chimpancé que busca conquistar el mundo, que crea un sinfín de máquinas para poder pelear y realizar sus crímenes. Posee una gran inteligencia y un extenso vocabulario. Él es quien creó a los Chicos Superolorosos.
+                    <br>Cuando no está cometiendo atrocidades se lo puede ver comportándose como un ciudadano normal, haciendo sus compras, actuando amablemente. Incluso es cordial con las Chicas Superpoderosas cuando no se encuentran batallando. Además parece haber entablado una amistad con otros villanos.</p>
+                </div>
+                <div class="info_personaje" id="info_el" style="display:none">
+                    <p>Es el enemigo más poderoso y malvado de las Chicas Superpoderosas.
+                    <br>Es un demonio extravagante, rey de la oscuridad, otros demonios y fantasmas. Misterioso, diabólico, dominante y sádico son cualidades que lo definen. Tanto ciudadanos como villanos le tienen miedo.
+                    <br>Si bien tiene el poder para destruir el mundo fácilmente, prefiere entablar juegos mentales con las Chicas para entretenerse, lo que lo suele llevar a subestimarlas y, posteriormente, a la derrota.</p>
+                </div>
+                <div class="info_personaje" id="info_peludito" style="display:none">
+                    <p>Es un villano recurrente de las Chicas Superpoderosas.
+                    <br>Es una mutación de oso peludo con antenas que vive en el bosque que está al lado de Saltadilla junto a un montón de animales. 
+                    <br>De personalidad avara, agresiva y antisocial, odia que la gente se acerque a su propiedad y atacará a cualquiera que lo intente.
+                    <br>Su único amigo es Joe, su banyo.</p>
+                </div>
+                <div class="info_personaje" id="info_princesa" style="display:none">
+                    <p>Es una villana recurrente de las Chicas Superpoderosas.
+                    <br>Se trata de una niña rica, mezquina, egoísta, rencorosa y manipuladora, que quería ser parte del grupo de heroínas para ser popular. Al negársele esta oportunidad toma la decisión de que si ella no puede ser una Superpoderosa, entonces no habrán Superpoderosas.
+                    <br>Lo único que ama por encima de ella es el dinero.</p>
+                </div>
+                <div class="info_personaje" id="info_rrb" style="display:none">
+                    <p>Trío de niños villanos que representan la contraparte malvada de las Chicas Superpoderosas, creados por Mojo Jojo para destruirlas.
+                    <br>Así como las niñas fueron creadas a partir de “Azúcar, flores y muchos colores” ellos fueron creados a partir de pelos de axila, caracoles, la cola de un perro y agua de inodoro que contenía Sustancia X.
+                    <br>Si bien fueron creados a imagen y semejanza de las Chicas, teniendo los mismos superpoderes, su mayor debilidad son los besos de las niñas puesto que pueden contagiarlos de piojos.</p>
+                </div>
+                <div class="info_personaje" id="info_gangreen" style="display:none">
+                    <p>Banda de villanos recurrentes de las Chicas Superpoderosas, compuesta por Ace, Gran Billy, Arturo, Serpiente y Genio. Se caracterizan por tener la piel verde. 
+                    <br>Su nombre de pandilla es un juego de palabras entre “gang” (“pandilla” en inglés) y la afección de piel.
+                    <br>Viven en el depósito de chatarra de Saltadilla y suelen cometer delitos menores, como vandalismo u hostigamiento.</p>
+                </div>
+                <div class="info_personaje" id="info_amoeba" style="display:none">
+                    <p>Un trío de amebas considerados la banda de villanos más tonta de Saltadilla, compuesta por Jefe, Slim y Junior. Los tres llevan sombrero.
+                    <br>Su mayor sueño es ser considerados villanos de renombre y ser enviados a la cárcel, pero sus cerebros son tan primitivos que no pueden desarrollar un plan más malvado que cruzar mal la calle o tirar basura en la vía pública.
+                    <br>Su mayor crimen fue robar naranjas.
+                    <br>Si realmente logran causar problemas es por pura casualidad.</p>
+                </div>
+                <div class="info_personaje" id="info_sedusa" style="display:none">
+                    <p>Villana que usa sus encantos femeninos y rápido ingenio para influir en los hombres para que hagan su voluntad.
+                    <br>Pelea utilizando su cabello como látigo.
+                    <br>Su nombre y cabello están inspirados en Medusa, la gorgona de la Mitología Griega.
+                    <br>Durante un breve período fue la novia del Profesor Utonio.</p>
+                </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function showHideInfoPersonaje(personaje, categoria) {
+            var p = document.getElementById("info_"+personaje);
+            const lista_ciudadanos = ["utonio", "alcalde", "belo", "keane"];
+            const lista_villanos = ["mojojojo", "el", "peludito", "princesa", "rrb", "gangreen", "amoeba", "sedusa"];
+
+            if (p.style.display === "none") 
+            {
+                if (categoria=="ciudadanos")
+                {
+                    var index = lista_ciudadanos.indexOf(personaje);
+                    lista_ciudadanos.splice(index,1);
+                    lista_ciudadanos.forEach(showHidePersonajes);
+                }
+                else
+                {
+                    var index = lista_villanos.indexOf(personaje);
+                    lista_villanos.splice(index,1);
+                    lista_villanos.forEach(showHidePersonajes);
+                }
+                p.style.display = "block";
+            } 
+            else 
+            {
+                if (categoria=="ciudadanos")
+                {
+                    lista_ciudadanos.push(personaje);
+                    lista_ciudadanos.forEach(showHidePersonajes);
+                }
+                else
+                {
+                    lista_villanos.push(personaje);
+                    lista_villanos.forEach(showHidePersonajes);
+                }
+                
+                p.style.display = "none";
+            }
+        }
+        function showHidePersonajes(item)
+        {
+            var e = document.getElementById(item);
+            if(e.style.display=="none")
+            {
+                e.style.display = "block";
+            }
+            else
+            {
+                e.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

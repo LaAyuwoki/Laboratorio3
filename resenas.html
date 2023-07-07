@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Episodios</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/ppglogo.png" alt="PowerPuff Girls Logo">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id= "contenedor_resenas">
+            <div class="caja_resena">
+                <p>“Con una perspicacia en la cultura pop que incluye referencias de todo tipo y un sentido de la diversión sin igual. Esta serie de Cartoon Network es increíblemente creativa de la manera más sencilla.”</p>
+                <h4>Marc Bernardin para <a href="https://ew.com/article/2000/06/02/powerpuff-girls/" target="_blank">Entertainment Weekly</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“El uso de humor adulto y referencias a la cultura pop lo vuelve una sátira divertida que puede agradarle tanto a un televidente de 37 años como de 7.”</p>
+                <h4>Peter Marks para <a href="https://www.nytimes.com/2000/04/16/arts/television-radio-now-mom-and-dad-are-going-cartoon-crazy-too.html" target="_blank">The New York Times</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“Una serie tierna y altamente estilizada que emociona los sentidos con personajes extraños, situaciones divertidas y mucha comedia baja. Además pasa de la inocencia a la violencia muy rápidamente y no hay mucha protección para los pequeños sobre los trasfondos violentos.”</p>
+                <h4>Joly Herman para <a href="https://www.commonsensemedia.org/tv-reviews/the-powerpuff-girls" target="_blank">Common Sense Media</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“La serie puede ser transgresora basada en su violencia, pero tierna a la vez. Está perfectamente dibujada, escrita y actuada.”</p>
+                <h4>Robert Lloyd para <a href="https://www.latimes.com/archives/blogs/show-tracker/story/2009-01-19/review-powerpuff-girls-rule" target="_blank">LA Times</a></h4>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

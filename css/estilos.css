@@ -1,0 +1,219 @@
+header{
+	padding-top: 2%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+	padding-left: 7%;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+body{
+	font-family: 'Rubik', sans-serif;
+	background: url(../images/background.jpg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+}
+
+h3{
+	display: block;
+	text-align: center;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+
+section{
+	display:flex;
+	flex-direction: column;
+}
+
+
+
+
+/*PERSONAJES*/
+.categoria_personajes{
+	text-align: center;
+}
+
+.contenedor_masivo{
+	width: 60%;
+	display: inline-flex;
+}
+
+.contenedor_personaje{
+	width: 20%;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 15px;
+	margin:auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+
+.contenedor_personaje h4{
+	text-align: center;
+	margin-top: 0%;
+	margin-bottom: 0%;
+
+}
+
+.contenedor_personaje img{
+	width:100%;
+}
+
+.contenedor_personaje a, .contenedor_personaje a:visited{
+	text-decoration: none;
+}
+
+
+
+#bombon, #bombon a:visited{
+	border-color: #FDAFC9;
+	color: #FDAFC9;
+	text-decoration-color: #FDAFC9;
+}
+#burbuja, #burbuja a:visited{
+	border-color: #01A2E6;
+	color: #01A2E6;
+}
+#bellota, #bellota a:visited{
+	border-color: #00FF01;
+	color: #00FF01;
+}
+
+#cat_ciudadanos .contenedor_personaje, #cat_ciudadanos a{
+	border-color: #C0C0C0;
+	color: #C0C0C0;
+	text-decoration-color: #C0C0C0;
+}
+
+#cat_villanos .contenedor_personaje, #cat_villanos a{
+	border-color: #000000;
+	color: #000000;
+	text-decoration-color: #000000;
+}
+
+.info_personaje{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin:auto;
+	width: 60%;
+}
+
+.info_personaje p{
+	text-align: center;
+}
+
+
+
+/*EPISODIOS*/
+
+#contenedor_episodios button{
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	border-color: white;
+	color: white;
+	padding: 15px 32px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+
+button#temporada1, button#temporada4{
+	background-color: #FDAFC9;
+}
+
+button#temporada2, button#temporada5{
+	background-color: #01A2E6;
+}
+
+button#temporada3, button#temporada6{
+	background-color: #00FF01;
+}
+
+#contenedor_episodios button:hover{
+	background-color: black !important;
+}
+
+#contenedor_episodios ol{
+	text-align: center;
+	width: 90%;
+	padding-inline-start: 0px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#contenedor_episodios li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+.tabla_episodios{
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto;
+	background-color: #C0C0C0;
+	border-radius: 4px;
+}
+
+.etiqueta_titulo{
+	text-align: left;
+}
+
+.ep_descripcion{
+	text-align: left;
+	background-color: #F2F2F2;
+}
+
+.ep_descripcion:hover{
+	background-color: white;
+}
+
+
+
+
+/*RESEÑAS*/
+#contenedor_resenas{
+	width:90%;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.caja_resena{
+	width:45%;
+	background-color: #C0C0C0;
+	margin:2%;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.caja_resena:hover{
+	background-color: #F2F2F2;
+}
+
+.caja_resena p{
+	padding-top: 10px;
+}
+
+.caja_resena a, .caja_resena a:visited{
+	text-decoration-color: black;
+	color: black;
+}

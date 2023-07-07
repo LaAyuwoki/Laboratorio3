@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Episodios</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/ppglogo.png" alt="PowerPuff Girls Logo">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id= "contenedor_episodios">
+            <ol>
+              <li><button id="temporada1" onclick="showHideTablaEpisodios('temporada1')">Temporada 1</button></li>
+              <li><button id="temporada2" onclick="showHideTablaEpisodios('temporada2')">Temporada 2</button></li>
+              <li><button id="temporada3" onclick="showHideTablaEpisodios('temporada3')">Temporada 3</button></li>
+              <li><button id="temporada4" onclick="showHideTablaEpisodios('temporada4')">Temporada 4</button></li>
+              <li><button id="temporada5" onclick="showHideTablaEpisodios('temporada5')">Temporada 5</button></li>
+              <li><button id="temporada6" onclick="showHideTablaEpisodios('temporada6')">Temporada 6</button></li>
+            </ol>
+            <div class="tabla_episodios" id="episodios_temporada1" style="display:none">
+                <table>
+                    <tr><th>Nro. (Gral.)</th><th>Nro. (Temp.)</th><th class="etiqueta_titulo">Título</th></tr>
+                    <tr><td>1</td><td>1</td><td  class="etiqueta_titulo">El Insecto que Llevamos Dentro / Doble Personalidad</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">1A: las Chicas Superpoderosas conocen al disgustado Roach Coach, quien comanda a una Legión de cucarachas y planea invadir toda la ciudad debido al trato que ha tenido la humanidad con estos insectos. Así que deciden enfrentarse a algo que les da mucho asco.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">1B: Tres villanos de la ciudad de Saltadilla se fabrican nuevas identidades al encontrar trajes de las protagonistas dentro de la cárcel. Utilizando su condición de pseudo-superheroínas, aterrorizan la ciudad mientras que el Alcalde envía a las verdaderas Chicas Superpoderosas por error a la cárcel.</td></tr>
+
+                    <tr><td>2</td><td>2</td><td class="etiqueta_titulo">Simon Dice / Un Toque Femenino</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">2A: Mojo Jojo echa una maldición sobre la ciudad gracias al Robo de la Cabeza de Anubis, convirtiendo a todos los habitantes del mundo en perros, incluyendo a las Chicas Superpoderosas afortunadamente, se las ingenian para olfatear una solución y con una solo mordisco hacen que los planes de Mojo se frustren.
+                    <br>Nota: Es la primera aparición de Mojo Jojo.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">2B: Cuando el profesor Utonio se enamora de una chica desconocida, las chicas descubren que no es una dama tan buena como aparenta. En realidad se trata de la malvada Sedusa, quien planea castigar a las chicas para que pueda cometer sus crímenes.</td></tr>
+
+                    <tr><td>3</td><td>3</td><td class="etiqueta_titulo">El Pulpo del Mal / Problemas</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">3A: Mediante el peluche de Burbuja, Él se comunica con ella para que sus hermanas se peleen aún más y que así no trabajen en equipo. Su intención es transformar al peluche en un pulpo gigante que destruya toda la ciudad de Saltadilla. Pero al ver que Burbuja está en problemas, las niñas olvidan sus diferencias y derrotan al monstruo.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">3B: Los chicos Ameba, en su intento de realizar un delito real, idean quedarse en una zona de "Prohibido Pisar el Césped" durante toda la noche bajo la lluvia. Esto les hace enfermar y hacen que se contagie por todo el lugar. Ahora las protagonistas, enfermas, tratarán de buscar un antídoto.</td></tr>
+
+                    <tr><td>4</td><td>4</td><td class="etiqueta_titulo">Bellota se Enamora / Saber Compartir</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">4A: Bellota se enamora de Ace, el líder de la banda Gangrena. Este, al darse cuenta, se aprovecha de sus sentimientos para distraerla y que así el resto de su banda pueda atacar a sus hermanas.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">4B: Peludito es un ser que no soporta que alguien entre o toque su propiedad. Cuando llega a la ciudad de Saltadilla por culpa de una molesta ardilla y es atropellado por un camión, la gente le ayuda a recoger sus cosas. Esto le hace volverse loco y, violentamente enfurecido, golpea a quien sea que se le cruce por delante. Así que las Chicas Superpoderosas acabar con él, recurriendo a su más preciada posesión.</td></tr>
+
+                    <tr><td>5</td><td>5</td><td class="etiqueta_titulo">Noche de Terror / Abracadáver</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">5A: El Coco del Saco construye una bola gigante de discoteca que cubre el sol y, además, decide cortar la electricidad de toda la ciudad. Gracias a ello, todos los espectros y monstruos pueden asustar con toda libertad, montando una gran fiesta de malvados nocturnos. Las chicas, que no pueden dormir por el escándalo, deciden ir a destruir la Bola de Discoteca.
+                    <br>Nota: La gran nave esférica es parodia a la Estrella de la Muerte.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">5B: El alcalde de Saltadilla relata a las Chicas Superpoderosas la historia sobre un antiguo Mago. En su espectáculo sacó a una niña del público, haciendo desaparecer su oso de peluche. La niña, deseosa por recuperarlo, hace quedar en ridículo al Mago, para finalmente hacerlo caer en una cabina con púas. Transformado como un zombi con poderes mágicos, el mago despierta para vengarse de la gente que se burló de él.</td></tr>
+
+                    <tr><td>6</td><td>6</td><td class="etiqueta_titulo">Telefraudes / Amor Apache</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">6A: la banda Gangrena realizan bromas telefónicas, pero su líder Ace no se siente satisfecho con quiénes las reciben. Por ello, engañan al Alcalde de Saltadilla para que salga del trabajo, para hacer llamadas falsas de auxilio con la Línea Directa, suplantándose. Las envían a atacar a distintos villanos. Estos, molestos por ser perturbados sin motivo, llaman al Alcalde para quejarse.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">6B: Todos en la ciudad de Saltadilla adoran a sus pequeñas heroínas. Él, quien las odia desmesuradamente, decide usar ese sentimiento en contra de ellas: Gracias a un gas nocivo, transforma el amor de los ciudadanos en odio, haciendo que todos los habitantes traten de destruir a las chicas a toda costa, y ellas deciden hacer frente a sus seres queridos.</td></tr>
+
+                    <tr><td>7</td><td>7</td><td class="etiqueta_titulo">Palabras Mayores / La Venganza de Mojo</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">7A: Llega un nuevo superhéroe a la ciudad, el Mayor Poder parodia de Superman, quien ayuda a toda persona que está en peligro. Por su culpa, las chicas quedan en segundo plano; así que deciden investigar, averiguado un pequeño detalle sobre este personaje. Se trataba de un farsante: planeaba todos los crímenes para quedar como un héroe. Las chicas presentan un monstruo de imprevisto que lo hace confesar.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">7B: Mojo Jojo secuestra al Profesor Utonio para que las Chicas Superpoderosas se acerquen a su observatorio. Él les explica que no era un mono mutante, sino que hace mucho tiempo él era compañero del Profesor. Este, sintiéndose culpable, hace que Mojo adquiera superpoderes. A traición, Mojo ataca a las chicas con sus nuevos poderes, pero el Profesor al recordarlo todo, le dice a Mojo su versión de lo ocurrido.</td></tr>
+
+                    <tr><td>8</td><td>8</td><td class="etiqueta_titulo">El Comegoma / La Ley del Hielo</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">8A: Cuando Bellota ofende a su compañero Elmer por comer pegamento escolar, este se convierte (por una mosca radioactiva) en un monstruo de pegamento. Así que Bellota hace lo más difícil si decide salvar la ciudad: Pedir disculpas.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">8B: La ciudad de Saltadilla está pasando por una ola de calor y sus habitantes se están sofocando. Bombon descubre un nuevo poder llamado Soplo de hielo. Este poder, exclusivo en ella, hace de que sus hermanas se vuelvan celosas. El problema es que termina favoreciendo a una banda de criminales en su huida. Después de esto, promete no volver a usar nunca más ese poder, pero una bola gigante de fuego se aproxima a la ciudad: solo un poder como el Soplo de Hielo podrá detenerla.</td></tr>
+
+                    <tr><td>9</td><td>9</td><td class="etiqueta_titulo">La Nueva Burbuja / La Verdad Al Desnudo</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">9A: Burbuja, cansada de que la subestimen tanto, entra en la sala de entrenamiento al mismo nivel que sus hermanas. Esto provoca que se vuelva muy ruda, golpeando a cualquiera que cometa un crimen por mínimo que sea, incluyendo a un perro. Sin embargo, es secuestrada por Mojo Jojo, quien insta a sus hermanas a ir a su guarida, para tenderlas una trampa. No obstante, Burbuja resolverá sola el entuerto, para sorpresa de todos.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">9B: El Alcalde de Saltadilla es secuestrado por Mojo Jojo y es rescatado por las Chicas Superpoderosas. El Alcalde tenía los ojos vendados durante la batalla y desea saber porque las Chicas Superpoderosas se estaban riendo cuando lo salvaban. Así que ellas le cuentan todo lo que sucedió, cada una desde su versión.</td></tr>
+
+                    <tr><td>10</td><td>10</td><td class="etiqueta_titulo">Control Felino / El Nuevo Alcalde</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">10A: Burbuja rescata a un gato aparentemente inofensivo de las garras de un maleante. Con el tiempo, ese gato (en realidad, una gran mente criminal) se apodera de la mente del Profesor Utonio, haciéndole cometer el robo de una gran joya con poderes. las Chicas Superpoderosas logran evitar que el gato cumpla sus planes para que los gatos domésticos dominen la ciudad.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">10B: El Alcalde de Saltadilla tiene un contrincante: Peludito, quien le gana en las elecciones para la Alcaldía de Saltadilla. Cuando el villano está en el poder, solo llama a las chicas superoderosas para sus propias necesidades. Así que deciden buscar al verdadero alcalde junto a la señorita Bellum, pero Al dar con él, parece no importarle nada hasta saber de que el nuevo alcalde tiene su sombrero y ambos se retan en una batalla organizada por el puesto del alcalde y el sombrero.</td></tr>
+
+                    <tr><td>11</td><td>11</td><td class="etiqueta_titulo">La Oportunidad de Mojo / Quiero ser Mimo</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">11A: las Chicas Superpoderosas por accidente, lanzan su pelota de béisbol al observatorio de Mojo Jojo. Queriendo aprovechar la situación, las hace entrar y esperar mientras finge busca la pelota. Planea destruir a las chicas con un rayo destructor, pero ellas, inquietas, no paran de tocar sus pertenencias, haciendo que Mojo pierda la paciencia y les devuelva su pelota.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">11B: Un derrame accidental de Lejía hace de que el Payaso Arco iris, rebosante de alegría y color, se convierta en el Sr. Mimo, que hace que toda la ciudad se vuelva de blanco y negro, pasando a ser triste, lúgubre y sin vida. las Chicas Superpoderosas buscan un antídoto a todos estos males, que resulta ser ni nada más ni nada menos que el Amor.</td></tr>
+
+                    <tr><td>12</td><td>12</td><td class="etiqueta_titulo">Los Chicos Cocosos</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">12: Mojo Jojo, en prisión y harto de que las Chicas Superpoderosas frustren sus planes, piensa en combatir fuego con fuego: crear unos chicos que igualen a las Chicas Superpoderosas en habilidades. Gracias a pelos de axila, caracoles y una cola de un perro mezclados en un viejo excusado, logra crearlos. Ellos son fuertes y poseen los mismos poderes que las Chicas Superpoderosas y logran derrotarlas, pero éstas se dan cuenta de que tienen una debilidad.</td></tr>
+
+                    <tr><td>13</td><td>13</td><td class="etiqueta_titulo">Uh Oh... D.Y.N.A.M.O.</td></tr>
+                    <tr><td class="ep_descripcion" colspan="3">13: El Profesor Utonio, preocupado por la inseguridad de sus hijas, construye un robot gigantesco llamado D.Y.N.A.M.O. ("Dinamo Nanotectrónica Monorobótica"), armado con la más variada tecnología en arsenal ofensivo y defensivo para que puedan pelear contra el crimen. Ante los intentos del profesor, las Chicas Superpoderosas rehúsan a usarla. Sin embargo, lo deciden usar ante un gigantesco y malévolo pez globo.</td></tr>
+
+
+
+
+                </table>
+            </div>
+            <div class="tabla_episodios" id="episodios_temporada2" style="display:none">
+                blablabla temporada 2
+            </div>
+            <div class="tabla_episodios" id="episodios_temporada3" style="display:none">
+                blablabla temporada 3
+            </div>
+            <div class="tabla_episodios" id="episodios_temporada4" style="display:none">
+                blablabla temporada 4
+            </div>
+            <div class="tabla_episodios" id="episodios_temporada5" style="display:none">
+                blablabla temporada 5
+            </div>
+            <div class="tabla_episodios" id="episodios_temporada6" style="display:none">
+                blablabla temporada 6
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function showHideTablaEpisodios(temporada) {
+            var t = document.getElementById("episodios_"+temporada);
+            var b = document.getElementById(temporada);
+
+            if (t.style.display === "none") 
+            {
+                refreshBotones();
+                b.style.backgroundColor = "black";
+                t.style.display = "block";
+            } 
+            else 
+            {
+                refreshBotones();
+            }
+        }
+        function refreshBotones(){
+            const botones_rosa = ["temporada1", "temporada4"];
+            const botones_celeste = ["temporada2", "temporada5"];
+            const botones_verde = ["temporada3", "temporada6"];
+
+            var t;
+            var b;
+
+            botones_rosa.forEach(function(item){
+                b = document.getElementById(item);
+                b.style.backgroundColor = "#FDAFC9";
+                t = document.getElementById("episodios_"+item);
+                t.style.display= "none";
+            });
+            botones_celeste.forEach(function(item){
+                b = document.getElementById(item);
+                b.style.backgroundColor = "#01A2E6";
+                t =document.getElementById("episodios_"+item);
+                t.style.display= "none";
+            });
+            botones_verde.forEach(function(item){
+                b = document.getElementById(item);
+                b.style.backgroundColor = "#00F101";
+                t =document.getElementById("episodios_"+item);
+                t.style.display= "none";
+            });
+        }
+    </script>
+</body>
+</html>
