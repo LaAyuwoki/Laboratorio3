@@ -5,10 +5,41 @@ header{
 	padding-left: 7%;
 	display: flex;
 	justify-content: space-between;
+	background-color: black;
+	position: sticky;
+	top: 0;
+}
+
+.icon { display: none; }
+
+nav{
+	background-color: black;
+
 }
 
 nav ul li{
 	display: inline-block;
+}
+
+nav ul li a, nav ul li a:visited{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	padding-right: 2rem;
+}
+
+.menu_op1:hover{
+	color: hotpink;
+}
+
+.menu_op2:hover{
+	text-decoration: none;
+	color: #01A2E6;
+}
+
+.menu_op3:hover{
+	text-decoration: none;
+	color: #00FF01;
 }
 
 body{
@@ -190,7 +221,6 @@ button#temporada3, button#temporada6{
 /*RESEÑAS*/
 #contenedor_resenas{
 	width:90%;
-	display: flex;
 	text-align: center;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -198,11 +228,13 @@ button#temporada3, button#temporada6{
 }
 
 .caja_resena{
-	width:45%;
+	width:70%;
 	background-color: #C0C0C0;
 	margin:2%;
 	border-radius: 10px;
 	text-align: center;
+	margin-left: auto;
+	margin-right:auto;
 }
 
 .caja_resena:hover{
@@ -216,4 +248,47 @@ button#temporada3, button#temporada6{
 .caja_resena a, .caja_resena a:visited{
 	text-decoration-color: black;
 	color: black;
+}
+
+
+
+
+
+@media (max-width: 480px) { 
+header{
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: black;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+	color:white;
+}
+
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+	padding-inline-start:0px;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
 }
