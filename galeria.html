@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Producción en clase: Pixar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/ppg_logo.png" alt="PowerPuff Girls Logo"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="">
+            <ul>
+                <li><a class="menu_op1" href="index.html">Inicio</a></li>
+                <li><a class="menu_op2" href="personajes.html">Personajes</a></li>
+                <li><a class="menu_op3" href="episodios.html">Episodios</a></li>
+                <li><a class="menu_op1" href="galeria.html">Galería</a></li>
+                <li><a class="menu_op2" href="resenas.html">Reseñas</a></li>
+                <li><a class="menu_op3" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
+    <section>
+        <article id="contenedor_galeria">
+            <div class="row">
+                <div class="column">
+                    <img src="images/galeria/creditos.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/sugar_spice.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/family.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/townsville.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/torre_mojojojo.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/kinder.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/villains.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/telephone.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/flying.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/fighting.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/love_song.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/galeria/super_heroes.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/galeria/creditos.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/galeria/sugar_spice.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/galeria/family.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/galeria/townsville.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/galeria/torre_mojojojo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/galeria/kinder.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/galeria/villains.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/galeria/telephone.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/galeria/flying.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/galeria/fighting.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/galeria/love_song.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/galeria/super_heroes.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/creditos.jpg" style="width:100%" onclick="currentSlide(1)" alt="Las chicas superpoderosas: Burbuja (izquierda), Bombón (centro), Bellota (derecha).">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/sugar_spice.jpg" style="width:100%" onclick="currentSlide(2)" alt="Azúcar, flores y muchos colores, sumado a la sustancia X: La fórmula para crear a las chicas superpoderosas.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/family.jpg" style="width:100%" onclick="currentSlide(3)" alt="Las chicas superpoderosas viven en familia con el Profesor Utonio, a quien consideran su padre.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/townsville.jpg" style="width:100%" onclick="currentSlide(4)" alt="Saltadilla: Ciudad donde viven las chicas superpoderosas.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/torre_mojojojo.jpg" style="width:100%" onclick="currentSlide(5)" alt="Torre de Mojojojo.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/kinder.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jardín de infantes al que asisten las chicas superpoderosas. La señorita Keane es su maestra.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/villains.jpg" style="width:100%" onclick="currentSlide(7)" alt="Villanos atacando Saltadilla.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/telephone.jpg" style="width:100%" onclick="currentSlide(8)" alt="Las chicas superpoderosas reciben llamadas del alcalde cuando un monstruo ataca la ciudad.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/flying.jpg" style="width:100%" onclick="currentSlide(9)" alt="Las chicas superpoderosas acudiendo al rescate cuando hay peligro.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/fighting.jpg" style="width:100%" onclick="currentSlide(10)" alt="Las chicas superpoderosas derrotando a los malos.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/love_song.jpg" style="width:100%" onclick="currentSlide(11)" alt="Las chicas superpoderosas utilizando la música y el amor para combatir al crimen.">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="images/galeria/super_heroes.jpg" style="width:100%" onclick="currentSlide(12)" alt="Las chicas superpoderosas probando nuevos trajes para derrotar a los villanos.">
+    </div>
+
+  </div>
+</div>
+
+        </article>
+    </section>
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        let boton_up = document.getElementById("boton_up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            boton_up.style.display = "block";
+          } else {
+            boton_up.style.display = "none";
+          }
+        }
+        function goToTop() {
+          document.body.scrollTop = 0; //Safari
+          document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+        }
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+
+
+
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+</body>
+</html>

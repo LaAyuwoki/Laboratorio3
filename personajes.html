@@ -26,25 +26,25 @@
             </ul>
         </nav>
     </header>
-
+    <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
     <section>
         <article id= "cat_ppg_girls" class="categoria_personajes">
                 <h3 id="prueba" >Chicas Superpoderosas</h3>
                 <div class="contenedor_masivo">
                     <div id="bombon" class="contenedor_personaje">
-                        <a href="#">
+                        <a href="bombon.html">
                             <img src="images/blossom.jpg" alt="Bombón">
                             <h4>Bombón</h4>
                         </a>
                     </div>
                     <div id="burbuja" class="contenedor_personaje">
-                        <a href="#">
+                        <a href="burbuja.html">
                             <img src="images/bubbles.jpg" alt="Burbuja">
                             <h4>Burbuja</h4>
                         </a>
                     </div>
                     <div id="bellota" class="contenedor_personaje">
-                        <a href="#">
+                        <a href="bellota.html">
                             <img src="images/buttercup.jpg" alt="Bellota">
                             <h4>Bellota</h4>
                         </a>
@@ -188,6 +188,20 @@
         <img src="images/redes/instagram.png" alt="Instagram">
     </footer>
     <script type="text/javascript">
+        let boton_up = document.getElementById("boton_up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            boton_up.style.display = "block";
+          } else {
+            boton_up.style.display = "none";
+          }
+        }
+        function goToTop() {
+          document.body.scrollTop = 0; //Safari
+          document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+        }
         function myFunction() {
           var x = document.getElementById("menu");
           if (x.className === "") {

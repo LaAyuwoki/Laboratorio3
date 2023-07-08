@@ -10,6 +10,11 @@ header{
 	top: 0;
 }
 
+header img{
+	width: 100%;
+	height: 100%;
+}
+
 .icon { display: none; }
 
 nav{
@@ -21,7 +26,7 @@ nav ul li{
 	display: inline-block;
 }
 
-nav ul li a, nav ul li a:visited{
+nav ul li a, nav ul li a:link, nav ul li a:visited{
 	text-decoration: none;
 	color: white;
 	font-size: 1.2rem;
@@ -68,8 +73,34 @@ section{
 	flex-direction: column;
 }
 
+#boton_up{
+	display: none;
+	width:4rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 0.1rem;
+	font-size: 18px;
+	font-weight: bold;
+}
 
+#boton_up img{
+	width: 100%;
+}
 
+#boton_up div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+#boton_up div:hover{
+	color: black;
+	opacity: 1;
+}
 
 /*PERSONAJES*/
 .categoria_personajes{
@@ -86,7 +117,7 @@ section{
 }
 
 .contenedor_personaje{
-	width:7rem;
+	width:6rem;
 	border-color: #000000;
 	border-style: solid;
 	border-width: 15px;
@@ -118,16 +149,16 @@ section{
 
 
 
-#bombon, #bombon a:visited{
+#bombon, #bombon a:link, #bombon a:visited{
 	border-color: #FDAFC9;
 	color: #FDAFC9;
 	text-decoration-color: #FDAFC9;
 }
-#burbuja, #burbuja a:visited{
+#burbuja, #burbuja a:link, #burbuja a:visited{
 	border-color: #01A2E6;
 	color: #01A2E6;
 }
-#bellota, #bellota a:visited{
+#bellota, #bellota a:link, #bellota a:visited{
 	border-color: #00FF01;
 	color: #00FF01;
 }
@@ -171,6 +202,11 @@ section{
 	font-size: 16px;
 	margin: 2px 2px;
 	cursor: pointer;
+}
+
+.cerrar_tabla{
+	width:100%;
+	background-color: black;
 }
 
 button#temporada1, button#temporada4{
@@ -232,19 +268,20 @@ button#temporada3, button#temporada6{
 	width:90%;
 	text-align: center;
 	flex-wrap: wrap;
+	margin-top: 1rem;
 	margin-left: auto;
 	margin-right:auto;
 }
 
 .caja_resena{
-	width:70%;
+	width:90%;
 	background-color: #C0C0C0;
 	margin:2%;
 	border-radius: 10px;
 	text-align: center;
 	margin-left: auto;
 	margin-right:auto;
-	padding-bottom: 0.25rem;
+	padding: 0.25rem;
 }
 
 .caja_resena:hover{
@@ -255,9 +292,165 @@ button#temporada3, button#temporada6{
 	padding-top: 10px;
 }
 
-.caja_resena a, .caja_resena a:visited{
+.caja_resena a, .caja_resena a:link, .caja_resena a:visited{
 	text-decoration-color: black;
 	color: black;
+}
+
+
+
+
+/*GALERIA*/
+
+
+
+#contenedor_galeria{
+	width:90%;
+	justify-content: center;
+}
+
+.row{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: black;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  height:10rem;
+  width:auto;
+  display:inline-block;
+}
+.column2 {
+  height:2.5rem;
+  display:inline-block;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  height:30rem;
+  width: auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+#contenedor_galeria .prev, #contenedor_galeria .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+#contenedor_galeria .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+#contenedor_galeria img {
+  margin-bottom: -4px;
+  height:100%;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#contenedor_galeria img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -302,4 +495,31 @@ nav.responsive ul li {
 }
 nav.responsive ul li a {
 	padding-right: 0;
+}
+.close{
+	right: 0;
+}
+
+.modal{
+	width: 70%
+	padding-top: 2rem;
+}
+
+.mySlides{
+	height: 25rem;
+	width:auto;
+}
+
+.row{
+	justify-content: space-between;
+}
+
+.column {
+  height:5.5rem;
+}
+
+.column2{
+	height:2rem;
+}
+
 }

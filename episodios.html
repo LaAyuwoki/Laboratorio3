@@ -12,7 +12,7 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="images/ppg_logo.png" alt="PowerPuff Girls Logo"></a>
+            <a href="index.html"><img src="images/ppg_logo.png" alt="PowerPuff Girls Logo" ></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="menu" class="">
@@ -26,7 +26,7 @@
             </ul>
         </nav>
     </header>
-
+    <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
     <section>
         <article id= "contenedor_episodios">
             <ol>
@@ -91,14 +91,12 @@
 
                     <tr><td>13</td><td>13</td><td class="etiqueta_titulo">Uh Oh... D.Y.N.A.M.O.</td></tr>
                     <tr><td class="ep_descripcion" colspan="3">13: El Profesor Utonio, preocupado por la inseguridad de sus hijas, construye un robot gigantesco llamado D.Y.N.A.M.O. ("Dinamo Nanotectrónica Monorobótica"), armado con la más variada tecnología en arsenal ofensivo y defensivo para que puedan pelear contra el crimen. Ante los intentos del profesor, las Chicas Superpoderosas rehúsan a usarla. Sin embargo, lo deciden usar ante un gigantesco y malévolo pez globo.</td></tr>
-
-
-
-
                 </table>
+                <button class="cerrar_tabla" onclick="showHideTablaEpisodios('temporada1')">CERRAR TABLA</button>
             </div>
             <div class="tabla_episodios" id="episodios_temporada2" style="display:none">
                 blablabla temporada 2
+                <button class="cerrar_tabla" onclick="showHideTablaEpisodios('temporada2')">CERRAR TABLA</button>
             </div>
             <div class="tabla_episodios" id="episodios_temporada3" style="display:none">
                 blablabla temporada 3
@@ -123,6 +121,20 @@
         <img src="images/redes/instagram.png" alt="Instagram">
     </footer>
     <script type="text/javascript">
+        let boton_up = document.getElementById("boton_up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            boton_up.style.display = "block";
+          } else {
+            boton_up.style.display = "none";
+          }
+        }
+        function goToTop() {
+          document.body.scrollTop = 0; //Safari
+          document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+        }
         function myFunction() {
           var x = document.getElementById("menu");
           if (x.className === "") {
@@ -172,6 +184,7 @@
                 t =document.getElementById("episodios_"+item);
                 t.style.display= "none";
             });
+            window.scrollTo(0,0);
         }
     </script>
 </body>

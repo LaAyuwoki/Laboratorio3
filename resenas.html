@@ -26,7 +26,7 @@
             </ul>
         </nav>
     </header>
-
+    <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
     <section>
         <article id= "contenedor_resenas">
             <div class="caja_resena">
@@ -56,6 +56,20 @@
         <img src="images/redes/instagram.png" alt="Instagram">
     </footer>
     <script type="text/javascript">
+        let boton_up = document.getElementById("boton_up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            boton_up.style.display = "block";
+          } else {
+            boton_up.style.display = "none";
+          }
+        }
+        function goToTop() {
+          document.body.scrollTop = 0; //Safari
+          document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+        }
         function myFunction() {
           var x = document.getElementById("menu");
           if (x.className === "") {
