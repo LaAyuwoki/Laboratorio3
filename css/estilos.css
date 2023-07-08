@@ -102,6 +102,53 @@ section{
 	opacity: 1;
 }
 
+
+
+/*INICIO*/
+h1{
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+h2{
+	text-align: center;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight:bold;
+	padding-top: 2rem;
+}
+
+.seccion_inicio p{
+	width: 90%;
+	text-align: center;
+	margin:auto;
+}
+
+#contenedor_foto{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding-top: 1.5rem;
+}
+
+.seccion_inicio img{
+	margin-top: 1rem;
+	width:100%;
+	margin: auto;
+}
+
+.pie_foto{
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+	margin: auto;
+}
+
+
+
+
+
 /*PERSONAJES*/
 .categoria_personajes{
 	text-align: center;
@@ -150,17 +197,19 @@ section{
 
 
 #bombon, #bombon a:link, #bombon a:visited{
-	border-color: #FDAFC9;
-	color: #FDAFC9;
-	text-decoration-color: #FDAFC9;
+	border-color: hotpink;
+	color: hotpink;
+	text-decoration-color: hotpink;
 }
 #burbuja, #burbuja a:link, #burbuja a:visited{
 	border-color: #01A2E6;
 	color: #01A2E6;
+	text-decoration-color: #01A2E6;
 }
 #bellota, #bellota a:link, #bellota a:visited{
 	border-color: #00FF01;
 	color: #00FF01;
+	text-decoration-color: #00FF01;
 }
 
 #cat_ciudadanos .contenedor_personaje, #cat_ciudadanos a{
@@ -187,6 +236,44 @@ section{
 	text-align: center;
 }
 
+#seccion_bombon .contenedor_personaje, #seccion_burbuja .contenedor_personaje, #seccion_bellota .contenedor_personaje {
+	width:10rem;
+	margin:0;
+}
+
+.contenedor_bombon{
+	border-radius: 10px;
+	background-color: hotpink;
+	padding:0.5rem;
+	margin:1rem;
+}
+
+.contenedor_burbuja{
+	border-radius: 10px;
+	background-color: #01A2E6;
+	padding:0.5rem;
+	margin:1rem;
+}
+
+.contenedor_bellota{
+	border-radius: 10px;
+	background-color: #00FF01;
+	padding:0.5rem;
+	margin:1rem;
+}
+
+.back_personajes{
+	margin:auto;
+	font-size: 1rem;
+	background-color: black;
+	color:white;
+	text-transform: uppercase;
+}
+a.back_personajes, a.back_personajes:link, a.back_personajes:visited{
+	text-decoration: none;
+}
+
+
 
 
 /*EPISODIOS*/
@@ -210,7 +297,7 @@ section{
 }
 
 button#temporada1, button#temporada4{
-	background-color: #FDAFC9;
+	background-color: hotpink;
 }
 
 button#temporada2, button#temporada5{
@@ -496,6 +583,13 @@ nav.responsive ul li {
 nav.responsive ul li a {
 	padding-right: 0;
 }
+
+.seccion_inicio img{
+	width: 100%;
+}
+
+
+
 .close{
 	right: 0;
 }

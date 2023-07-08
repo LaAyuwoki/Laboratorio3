@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Personajes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/ppg_logo.png" alt="PowerPuff Girls Logo"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="">
+            <ul>
+                <li><a class="menu_op1" href="index.html">Inicio</a></li>
+                <li><a class="menu_op2" href="personajes.html">Personajes</a></li>
+                <li><a class="menu_op3" href="episodios.html">Episodios</a></li>
+                <li><a class="menu_op1" href="galeria.html">Galería</a></li>
+                <li><a class="menu_op2" href="resenas.html">Reseñas</a></li>
+                <li><a class="menu_op3" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
+    <section>
+        <article id= "seccion_bombon" class="categoria_personajes">
+            <div class="contenedor_bombon">
+                <h1>Bombón</h1>
+                <div id="bombon" class="contenedor_personaje">
+                    <a href="bombon.html">
+                        <img src="images/blossom.jpg" alt="Bombón">
+                    </a>
+                </div>
+                <p class="descripcion_ppg">La miembro más inteligente del trío, autoproclamada líder.
+                <br>Usualmente es considerada la más madura, pero también puede ser exigente como vanidosa.
+                <br>Es muy protectora con sus hermanas, como así también con el Profesor y otras personas.
+                <br>Su nombre “Bombón” proviene de Blossom. Fue nombrada así debido a que fue la primera de las tres en hablar, además de que lo hizo abierta y sinceramente al Profesor.
+                <br>Su color característico es el rosa y su ingrediente de personalidad es “Todo lo bueno”.
+                </p>
+            </div>
+        </article>
+        <a class="back_personajes" href="personajes.html">-Volver a personajes-</a>
+    </section>
+
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        let boton_up = document.getElementById("boton_up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            boton_up.style.display = "block";
+          } else {
+            boton_up.style.display = "none";
+          }
+        }
+        function goToTop() {
+          document.body.scrollTop = 0; //Safari
+          document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+        }
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+        function showHideInfoPersonaje(personaje, categoria) {
+            var p = document.getElementById("info_"+personaje);
+            const lista_ciudadanos = ["utonio", "alcalde", "belo", "keane"];
+            const lista_villanos = ["mojojojo", "el", "peludito", "princesa", "rrb", "gangreen", "amoeba", "sedusa"];
+
+            if (p.style.display === "none") 
+            {
+                if (categoria=="ciudadanos")
+                {
+                    var index = lista_ciudadanos.indexOf(personaje);
+                    lista_ciudadanos.splice(index,1);
+                    lista_ciudadanos.forEach(showHidePersonajes);
+                }
+                else
+                {
+                    var index = lista_villanos.indexOf(personaje);
+                    lista_villanos.splice(index,1);
+                    lista_villanos.forEach(showHidePersonajes);
+                }
+                p.style.display = "block";
+            } 
+            else 
+            {
+                if (categoria=="ciudadanos")
+                {
+                    lista_ciudadanos.push(personaje);
+                    lista_ciudadanos.forEach(showHidePersonajes);
+                }
+                else
+                {
+                    lista_villanos.push(personaje);
+                    lista_villanos.forEach(showHidePersonajes);
+                }
+                
+                p.style.display = "none";
+            }
+        }
+        function showHidePersonajes(item)
+        {
+            var e = document.getElementById(item);
+            if(e.style.display=="none")
+            {
+                e.style.display = "block";
+            }
+            else
+            {
+                e.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
