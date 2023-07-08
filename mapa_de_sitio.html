@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Producción en clase: Pixar</title>
+    <title>Mapa de Sitio</title>
 </head>
 <body>
     <header>
@@ -28,31 +28,27 @@
     </header>
     <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
     <section>
-        <article>
-            <h1>Las Chicas Superpoderosas</h1>
-            <section id="sinopsis" class="seccion_inicio">
-                <p>Las <strong>Chicas Superpoderosas</strong> es una serie de acción-aventura que gira entorno a Bombón, Burbuja y Bellota, tres niñas de 5 años que tienen superpoderes.
-                Ellas viven junto a su padre y creador, el Profesor Utonio, y son frecuentemente llamadas por el alcalde de Saltadilla para combatir el crimen usando sus poderes mientras intentan llevar una infancia normal.
-                </p>
-                <div id="contenedor_foto">
-                    <img src="images/galeria/creditos.jpg" alt="Las chicas superpoderosas: Burbuja (izquierda), Bombón (centro), Bellota (derecha).">
-                    <p class="pie_foto">Las chicas superpoderosas: Burbuja (izquierda), Bombón (centro), Bellota (derecha).</p>
-                </div>
-            </section>
-            <section id="sobre_la_serie" class="seccion_inicio">
-                <h2>Acerca de la serie</h2>
-                <p>Título original: The Powerpuff Girls
-                <br>Título traducido: Las chicas superpoderosas
-                <br>Escritores: Craig McCracken
-                <br>Director: Craig McCracken
-                <br>Banda sonora: Música original compuesta por Thomas Chase, Steve Rucker y James L. Venable.
-                <br>Elenco: Cathy Cavadini, Tara Strong, E. G. Daily, Tom Kane, Tom Kenny, Roger L. Jackson, Jennifer Hale, Jeff Bennett, Jennifer Martin, Jim Cummings
-                <br>Temporadas: 6
-                <br>Capítulos: 78
-                </p>
-            </section>
+        <article id= "contenedor_resenas">
+            <div class="caja_resena">
+                <p>“Con una perspicacia en la cultura pop que incluye referencias de todo tipo y un sentido de la diversión sin igual. Esta serie de Cartoon Network es increíblemente creativa de la manera más sencilla.”</p>
+                <h4>Marc Bernardin para <a href="https://ew.com/article/2000/06/02/powerpuff-girls/" target="_blank">Entertainment Weekly</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“El uso de humor adulto y referencias a la cultura pop lo vuelve una sátira divertida que puede agradarle tanto a un televidente de 37 años como de 7.”</p>
+                <h4>Peter Marks para <a href="https://www.nytimes.com/2000/04/16/arts/television-radio-now-mom-and-dad-are-going-cartoon-crazy-too.html" target="_blank">The New York Times</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“Una serie tierna y altamente estilizada que emociona los sentidos con personajes extraños, situaciones divertidas y mucha comedia baja. Además pasa de la inocencia a la violencia muy rápidamente y no hay mucha protección para los pequeños sobre los trasfondos violentos.”</p>
+                <h4>Joly Herman para <a href="https://www.commonsensemedia.org/tv-reviews/the-powerpuff-girls" target="_blank">Common Sense Media</a></h4>
+            </div>
+            <div class="caja_resena">
+                <p>“La serie puede ser transgresora basada en su violencia, pero tierna a la vez. Está perfectamente dibujada, escrita y actuada.”</p>
+                <h4>Robert Lloyd para <a href="https://www.latimes.com/archives/blogs/show-tracker/story/2009-01-19/review-powerpuff-girls-rule" target="_blank">LA Times</a></h4>
+            </div>
         </article>
+
     </section>
+
     <footer>
         <div class="box_redes">
             <a href="https://www.facebook.com/ThePowerpuffGirls/" target="_blank"><img src="images/redes/facebook.png" alt="Facebook"></a>
@@ -64,6 +60,7 @@
             Copyright © 2023 Dani Bertolini para Laboratorio 3. All rights reserved o habrá tabla. Si estás perdido podés ver el <a href="mapa_de_sitio.html">Mapa de Sitio</a>.
         </div>
     </footer>
+    
     <script type="text/javascript">
         let boton_up = document.getElementById("boton_up");
         window.onscroll = function() {scrollFunction()};

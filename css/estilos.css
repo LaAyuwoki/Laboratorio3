@@ -61,12 +61,6 @@ h3{
 	text-align: center;
 }
 
-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 350px;
-}
 
 section{
 	display:flex;
@@ -271,6 +265,20 @@ h2{
 }
 a.back_personajes, a.back_personajes:link, a.back_personajes:visited{
 	text-decoration: none;
+}
+
+a.back_personajes:hover{
+	background-color: white;
+	color:black;
+}
+
+a.voice_actor, a.voice_actor:link, a.voice_actor:visited{
+	text-decoration: none;
+	font-weight: bold;
+	color:black;
+}
+a.voice_actor:hover{
+	color:white;
 }
 
 
@@ -541,6 +549,40 @@ button#temporada3, button#temporada6{
 }
 
 
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10rem;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+}
+
+footer a{
+	max-width: 2.5rem;
+	width: 100%;
+	height: auto;
+	margin-right: .5%;
+}
+
+footer img{
+	max-width: 2.5rem;
+	width: 100%;
+	height: auto;
+	margin-right: 5%;
+}
+
+.box_redes{
+	display:flex;
+	width:50%;
+	justify-content: center;
+}
+
+.last_line, .last_line a, .last_line a:link, .last_line a:visited{
+	color:#333333;
+	text-decoration-color: #333333;
+}
+
 
 
 
@@ -614,6 +656,13 @@ nav.responsive ul li a {
 
 .column2{
 	height:2rem;
+}
+
+footer{
+	height: 80px;
+}
+footer img{
+	max-width: 1.5rem;
 }
 
 }
