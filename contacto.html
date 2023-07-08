@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Reseñas</title>
+    <title>Contacto</title>
 </head>
 <body>
     <header>
@@ -28,15 +28,18 @@
     </header>
     <div id="boton_up"><img src="images/ppg_flying.png" onclick="goToTop()"><div id="texto_boton_up" onclick="goToTop()">SUBIR</div></div>
     <section>
-        <article id= "contenedor_resenas">
-            <div class="caja_resena">
-                <p>Aquí estaría la página de Contacto pero no tengo nada para mostrar.</p>
-                <img src="images/sad.jpg" alt="De verdad lo siento." style="width:10rem;">
-            </div>
-
- 
-            </div>
-        </article>
+        <article id= "contenedor_contacto">
+            <h1>¡CONTÁCTANOS!</h1>
+            <form id="formulario" method="POST" action="#">
+                    <label>Ingresa tu nickname</label>
+                    <input type="text" name="nombre" id="nombre" value="">
+                    <label>Ingresa tu email</label>
+                    <input type="email" name="correo" id="correo" value="">
+                    <label>Escribe lo que quieras decirnos:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea>
+                <input type="submit" id="boton_enviar" value="Enviar">
+            </form>
+         </article>
 
     </section>
 
