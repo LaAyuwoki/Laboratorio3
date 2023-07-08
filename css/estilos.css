@@ -549,6 +549,29 @@ button#temporada3, button#temporada6{
 }
 
 
+/*Mapa de sitio*/
+.seccion_mapa{
+	padding-left: 1rem;
+	display:flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.seccion_mapa h3{
+	text-align: left;
+}
+
+.seccion_mapa a,.seccion_mapa a br, .seccion_mapa a:link, .seccion_mapa a:visited{
+	text-decoration-color: black;
+	color: black;
+	padding-left: 1rem;
+}
+
+
+
+
+
+
 footer{
 	display: flex;
 	justify-content: center;
